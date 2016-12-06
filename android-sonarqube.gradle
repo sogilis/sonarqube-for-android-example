@@ -1,0 +1,31 @@
+sonarqube {
+    //noinspection GroovyAssignabilityCheck
+    properties {
+        // Update your android version
+        def libraries = project.android.sdkDirectory.getPath() + "/platforms/android-23/android.jar"
+        if (project.plugins.hasPlugin('com.android.application')) {
+            "build/intermediates/exploded-aar/**/classes.jar"
+        }
+
+        property "sonar.sources", "src/main/java"
+        // Defines where the java files are
+        property "sonar.binaries", "build/intermediates/classes/debug"
+        property "sonar.libraries", libraries
+        // Defines where the xml files are
+        property "sonar.java.binaries", "build/intermediates/classes/debug"
+        property "sonar.java.libraries", libraries
+
+        // Analyze tests classes
+        if (project.plugins.hasPlugin('com.android.application')) {
+            property "sonar.tests", "src/test/java, src/androidTest/java"
+        } else {
+            property "sonar.tests", "src/test/java"
+        }
+
+        property "sonar.java.test.binaries", "build/intermediates/classes/debug"
+        property "sonar.java.test.libraries", libraries
+
+        property "sonar.junit.reportsPath", "build/test-results/Debug"
+        property "sonar.android.lint.report", "build/outputs/lint-results.xml"
+    }
+}

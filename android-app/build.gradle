@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.sonarqube'
+apply from: '../android-sonarqube.gradle'
+
 
 android {
     compileSdkVersion 23
