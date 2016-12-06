@@ -5,7 +5,7 @@
 This application demonstrate how to configure Sonarqube with gradle for an Android project.
 Sources are based on a Google sample app.
 
-# How to analysis this project
+# How to analyze this project
 - Install [Docker](https://www.docker.com)
 
 - Install and run [Sonqube Docker image](https://store.docker.com/images/3f8fc4ce-eb8e-40ad-88ba-69e97299c64f?tab=description) `sonarqube:alpine`:
