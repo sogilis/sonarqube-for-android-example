@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">SampleApp</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample app demonstrate how to configure SonarQube to android project with multiple modules :
+            android app, android library and java library.
+
+
+        ]]>
+    </string>
+</resources>
