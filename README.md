@@ -20,7 +20,6 @@ Sources are based on a Google sample app.
   * Windows: `TO Complete`
   * Linux: `TO Complete`
 
-
 - Run analysis
 ```
 ./gradlew clean test jacocoTestReport sonarqube \
@@ -31,7 +30,7 @@ Replace `[Sonarqube container IP]` with corresponding IP address.
 
 - Watch result here: http://[Sonarqube container IP]:9000
   * Log in with default user: `admin/admin`
-  * *Warning*: analyses is done by a background task and can take a view seconds. You can follow background task here: [To Complete]
+  * **Warning**: analyses is done by a background task and can take a view seconds. You can follow background task here: `Administration > Projects > Background Tasks`
 
 - See Sonarqube logs:
 ```
