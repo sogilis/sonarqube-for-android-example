@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'org.sonarqube'
+apply plugin: 'jacoco-android'
 apply from: '../android-sonarqube.gradle'
 
 android {
@@ -19,6 +20,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled = true
         }
     }
 }
