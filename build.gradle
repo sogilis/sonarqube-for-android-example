@@ -17,3 +17,5 @@ allprojects {
         jcenter()
     }
 }
+
+apply plugin: 'org.sonarqube'
