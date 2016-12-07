@@ -15,11 +15,6 @@ Sources are based on a Google sample app.
 
 `sonarqube:alpine` is a lightweight version (5M) or sonarqube:latest. See [docker store page](https://store.docker.com/images/3f8fc4ce-eb8e-40ad-88ba-69e97299c64f?tab=description) for details.
 
-- Get Sonarqube container IP address:
-  * OSX: `docker-machine ip default`
-  * Windows: `TO Complete`
-  * Linux: `TO Complete`
-
 - Run analysis
 ```
 ./gradlew clean test jacocoTestReport sonarqube \
