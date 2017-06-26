@@ -1,5 +1,3 @@
-CI build: [![CircleCI](https://circleci.com/gh/sogilis/sonarqube-for-android-example/tree/master.svg?style=svg&circle-token=4a0404fab8d9699fb85f4286b621a88b980159a5)](https://circleci.com/gh/sogilis/sonarqube-for-android-example/tree/master)
-
 # Sample application
 
 This application demonstrate how to configure Sonarqube with gradle for an Android project.
